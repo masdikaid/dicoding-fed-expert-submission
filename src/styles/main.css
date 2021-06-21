@@ -241,10 +241,36 @@ img {
     color: #FFFFFF;
 }
 
+.cta-link {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #FF9280;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
 .try {
     background: chocolate;
     min-width: 10px;
     min-height: 10px;
+}
+
+footer {
+    background-color: #FF9280;
+    min-height: 250px;
+}
+
+.footer-credit {
+    background-color: #ED6F5A;
+    height: 60px;
+}
+
+.footer-credit h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
