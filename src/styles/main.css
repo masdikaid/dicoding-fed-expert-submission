@@ -250,12 +250,6 @@ img {
     margin-top: 40px;
 }
 
-.try {
-    background: chocolate;
-    min-width: 10px;
-    min-height: 10px;
-}
-
 footer {
     background-color: #FF9280;
     min-height: 250px;
@@ -271,6 +265,53 @@ footer {
     font-size: 16px;
     font-weight: lighter;
     text-align: center;
+}
+
+.sponsors {
+    flex-direction: column-reverse;
+}
+
+.sponsor-icon {
+    width: 100%;
+}
+
+.sponsor-icon img {
+    width: 50%;
+    height: auto;
+    padding: 15px;
+}
+
+.about {
+    flex-direction: column-reverse;
+}
+
+.sponsor-title {
+    min-height: 170px;
+    width: 100%;
+    background: #FF9280;
+}
+
+.about-title {
+    min-height: 170px;
+    width: 100%;
+    background: #FF9280;
+}
+
+.cus-title {
+    font-size: 45px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.cus-title::after {
+    content: "";
+    display: block;
+    background: #fff;
+    position: relative;
+    margin: 10px 20px;
+    width: 25%;
+    height: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -289,9 +330,35 @@ footer {
     .grid {
         grid-template-columns: auto auto;
     }
+
+    .sponsor-title, .about-title {
+        width: 30%;
+        justify-content: left;
+    }
+
+    .cus-title {
+        padding-left: 40px;
+    }
+
+    .sponsors {
+        flex-direction: row;
+    }
+
+    .sponsor-icon {
+        width: 70%;
+    }
+
+    .about {
+        flex-direction: row;
+    }
+
+    .sponsor-icon img {
+        width: 30%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    
     .grid {
         grid-template-columns: auto auto auto;
     }
