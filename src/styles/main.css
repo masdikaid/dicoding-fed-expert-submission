@@ -115,8 +115,11 @@
     width: 44px;
     height: 44px;
     color: #fff;
+    background: none;
+    border: none;
     font-size: 30px;
     text-decoration: none;
+    text-align: center;
 }
 
 .jumbotron {
@@ -321,6 +324,11 @@ footer {
     background-color: #fff;
 }
 
+.about-form .cta-link {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
 .maps {
     border-radius: 10px;
     height: auto;
@@ -360,6 +368,22 @@ input::placeholder, textarea::placeholder {
 iframe {
     border: 0px;
     border-radius: 10px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    margin: 20px;
+    background-color: #bf1722;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    z-index: 100;
+}
+  
+.skip-link:focus {
+    top: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -407,22 +431,6 @@ iframe {
     .sponsor-icon img {
         width: 30%;
     }
-
-    .skip-link {
-        position: absolute;
-        top: -200px;
-        left: 0;
-        margin: 20px;
-        background-color: #bf1722;
-        color: white;
-        border-radius: 10px;
-        padding: 8px;
-        z-index: 100;
-     }
-      
-     .skip-link:focus {
-        top: 0;
-     }
 }
 
 @media only screen and (min-width: 1024px) {
