@@ -182,13 +182,6 @@ img {
     font-weight: normal;
 }
 
-.card-content a {
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 .button-cta {
     margin: 10px 0;
     padding: 15px 0;
@@ -198,6 +191,11 @@ img {
     background-color: #FF2400;
     border-radius: 10px;
     text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0px none;
 }
 
 .ratting {
@@ -314,6 +312,56 @@ footer {
     height: 10px;
 }
 
+.about-form {
+    padding: 20px;
+}
+
+.about-form .card {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.maps {
+    border-radius: 10px;
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+}
+
+.form {
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+}
+
+.form h3 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    display: block;
+    min-height: 44px;
+    padding: 10px 20px;
+}
+
+input[type=text], textarea {
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #727272;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+iframe {
+    border: 0px;
+    border-radius: 10px;
+}
+
 @media only screen and (min-width: 768px) {
     .nav-desktop {
         display: flex;
@@ -344,8 +392,12 @@ footer {
         flex-direction: row;
     }
 
-    .sponsor-icon {
+    .sponsor-icon, .about-form {
         width: 70%;
+    }
+
+    .maps, .form {
+        width: 50%;
     }
 
     .about {
